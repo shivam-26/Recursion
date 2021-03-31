@@ -16,6 +16,7 @@ void fun2(int n)
     fun2(n-1);
     cout<<n<<" ";
 }
+//fun3() is tail recursion version of fun2() . Tail recursion is faster than other recursion.
 void fun3(int n,int k=1)
 {
   if(n<=0) return;
