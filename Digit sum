@@ -1,0 +1,13 @@
+//C++ program for recursively calculate sum of digits.
+#include <bits/stdc++.h>
+using namespace std;
+int fun1(int n)
+{
+    if(n<10) return n;
+    
+    return fun1( n/10) + n%10;
+}
+int main()
+{
+    cout<<fun1(54321);
+}
