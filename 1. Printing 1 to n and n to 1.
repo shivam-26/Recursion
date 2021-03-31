@@ -1,7 +1,7 @@
 //C++ program for recursively print 1 to n.
 #include <bits/stdc++.h>
 using namespace std;
-//  This fun1 will print from n to 1.
+//  This fun1 will print from n to 1 this function is tail recursive.
 void fun1(int n)
 {
     if(n==0) return;
@@ -15,6 +15,12 @@ void fun2(int n)
     if(n<=0)return;
     fun2(n-1);
     cout<<n<<" ";
+}
+void fun3(int n,int k=1)
+{
+  if(n<=0) return;
+  cout<<k<<" ";
+  fun3(n-1,k+1);
 }
 int main()
 {
